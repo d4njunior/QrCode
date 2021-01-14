@@ -25,6 +25,7 @@ namespace QrCode.Controllers
             }
             var image = GenerateByteArray(url);
             viewModel.ImageB64 = String.Format("data:image/png;base64,{0}", Convert.ToBase64String(image));
+            ViewData["url"] = url;
             return View(viewModel);
         }
 
