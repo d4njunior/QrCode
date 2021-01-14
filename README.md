@@ -4,6 +4,11 @@
 # About
 QR Code generator in ASP.NET MVC
 
+## Layout
+<img src="https://github.com/d4njunior/QrCode/blob/main/QrCode/wwwroot/images/screen-1.jpg" width="80%">
+<img src="https://github.com/d4njunior/QrCode/blob/main/QrCode/wwwroot/images/screen-2.jpg" width="80%">
+<img src="https://github.com/d4njunior/QrCode/blob/main/QrCode/wwwroot/images/screen-3.jpg" width="80%">
+
 # Technologies Used
 ## Back end
 - C#
@@ -12,4 +17,3 @@ QR Code generator in ASP.NET MVC
 ## Front end
 - HTML
 - Bootstrap
-
