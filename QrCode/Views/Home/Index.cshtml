@@ -1,0 +1,31 @@
+﻿@model QrCode.ViewModels.IndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1 class="display-3">QrCode</h1>
+    <p class="lead">Place the url and click generate button to create the QrCode.</p>
+    <hr class="my-4">
+
+    <form>
+        <div class="row">
+            <div class="form-group col-md-6">
+
+                @if (ViewData["Msg"] != null)
+                {
+                    <div class="alert alert-dismissible alert-danger">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>@ViewData["Msg"]</strong>
+                    </div>
+                }
+
+                <input type="text" name="url" value="@ViewData["url"]" class="form-control form-control-lg" placeholder="Enter the url" required>
+                <input class="btn btn-success btn-lg mt-3" type="submit" value="Generate" />
+            </div>
+            <div class="form-group col-md-6 text-center">
+                <img src="@Model.ImageB64" style="width: 50%" />
+            </div>
+        </div>
+    </form>
+</div>
